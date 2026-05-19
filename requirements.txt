@@ -1,0 +1,10 @@
+pyshark==0.6
+scapy==2.5.0
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+joblib==1.4.2
+streamlit==1.37.1
+plotly==5.23.0
+pyyaml==6.0.2
+rich==13.7.1

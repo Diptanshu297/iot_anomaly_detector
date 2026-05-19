@@ -1,0 +1,33 @@
+capture:
+  interface: "Wi-Fi"
+  rotation_seconds: 60
+  output_dir: "data/raw"
+  bpf_filter: ""
+
+features:
+  window_seconds: 60
+  watched_devices:
+    - "192.168.1.50"
+    - "192.168.1.51"
+
+model:
+  alert_threshold: 0.05
+dashboard:
+  refresh_seconds: 10
+  live_refresh_seconds: 5
+database:
+  path: "data/anomaly.db"
+
+alerts:
+  console: true
+  file: true
+  log_path: "data/alerts.log"
+  email: false
+  webhook: false
+
+dashboard:
+  port: 8501
+  refresh_seconds: 10
+
+logging:
+  level: "INFO"
